@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contador</title>
+<style>html,body{margin:0;height:100%;background:#fff;color:#5f6428;font-family:Georgia,'Times New Roman',serif;text-align:center}body{display:flex;align-items:center;justify-content:center}b{display:block;font-size:44px;font-weight:400;line-height:1.1}span{font-size:13px;letter-spacing:.22em}</style></head>
+<body><div id="c"></div>
+<script>
+var n=Math.ceil((Date.UTC(2027,3,10,19)-Date.now())/864e5),c=document.getElementById('c');
+c.innerHTML=n>1?'<span>FALTAN</span><b>'+n+'</b><span>DÍAS</span>':n==1?'<span>FALTA</span><b>1</b><span>DÍA</span>':'<b>¡Hoy es el día!</b>';
+</script></body></html>
